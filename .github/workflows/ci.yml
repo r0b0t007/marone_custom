@@ -37,26 +37,26 @@ jobs:
 
     steps:
       - name: Checkout marone_custom
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           path: apps/marone_custom
 
       - name: Checkout morocco_localization
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           repository: r0b0t007/morocco_localization
           path: apps/morocco_localization
           token: ${{ secrets.APPS_READ_TOKEN }}
 
       - name: Checkout trade_import
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           repository: r0b0t007/trade_import
           path: apps/trade_import
           token: ${{ secrets.APPS_READ_TOKEN }}
 
       - name: Checkout bangicode_brand
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           repository: r0b0t007/bangicode_brand
           path: apps/bangicode_brand
